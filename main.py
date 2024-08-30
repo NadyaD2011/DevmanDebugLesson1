@@ -1,6 +1,6 @@
 from books_sdk import get_book_by_id, get_author
 
-# print(get_author(get_book_by_id(1, "AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM")))
+print(get_author(get_book_by_id("AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM", 1)))
 
 # Гипотеза 1: Неправильные скобки
 # Способ проверки: Удалить весь код, кроме скобок, и проверить их количество и порядок
