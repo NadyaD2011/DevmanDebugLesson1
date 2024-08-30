@@ -1,7 +1,6 @@
 from books_sdk import get_book_by_id, get_author
 
-print(get_author(get_book_by_id(1, "AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM")))
-
+# print(get_author(get_book_by_id(1, "AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM")))
 
 # Гипотеза 1: Неправильные скобки
 # Способ проверки: Удалить весь код, кроме скобок, и проверить их количество и порядок
@@ -20,11 +19,13 @@ print(get_author(get_book_by_id(1, "AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM")))
 # Установленный факт: ошибка осталась
 # Вывод: ошибка не из-за типа данных
 
-# Гипотеза 4: ...
-# Способ проверки: ...
-# Код для проверки: ...
-# Установленный факт: ...
-# Вывод: ...
+# Гипотеза 4: Книги с номером 1 не существует
+# Способ проверки: Попробовать передать не книгу 1, а книгу 0, 2 и 100
+# Код для проверки: print(get_author(get_book_by_id(0, "AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM")))
+#                   print(get_author(get_book_by_id(2, "AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM")))
+#                   print(get_author(get_book_by_id(100, "AAECTkuGjWo1Imwr-_6UrN-nzbo89sd3WSM")))
+# Установленный факт: При любом значении ошибка не уходит
+# Вывод: Ошибка не изза номера книги, книга 1 существует
 
 # Гипотеза 5: ...
 # Способ проверки: ...
